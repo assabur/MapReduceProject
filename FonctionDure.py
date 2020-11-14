@@ -3,13 +3,16 @@
 def userDuree(tel):
     fichier = open("calls.txt", "r")
     tableau =[]
+    TotalDure = 0
     for tuple in fichier:
       Line = tuple.strip()
       Line = tuple.split(",")
       for values in Line :
           if tel in values:
-            tableau.append(Line[2].strip())
+            dure = int(Line[2].strip())
+            tableau.append(dure)
+            TotalDure+= dure
     #print(len(tableau))
-    return tableau
+    return round(TotalDure/len(tableau),2)
 
 

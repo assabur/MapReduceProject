@@ -2,7 +2,7 @@
 #!/usr/bin/python
 #!/bin/sh
 import sys, re
-
+from FonctionDure import userDuree
 #current_word = None
 #current_dure = 0
 #current_count = 0
@@ -20,21 +20,14 @@ for line in sys.stdin:
     #print (word)
     #wordFromMapper = word.split(":")
     #dure courante de lappel de luser
-    current_dure = int(word[2])
+    #current_dure = int(word[2])
     nom = word[0]
     tel = word[1]
-    taille = int(word[3])
+    UserdureMoyenne = userDuree(tel)
+    #taille = int(word[3])
     # name,tel,dure,tailletableau, 1
-
-    if count <taille:
-        dureTotal = current_dure +dureTotal
+    if count ==0 :
         count =count+1
-
-    else :
-        if count==taille :
-            # convert count (currently a string) to int
-            MoyenneParUser =dureTotal/taille
-            dureTotal = 0
-            count = 0
-            print('%s:%s:%s' % (nom,tel,MoyenneParUser))
+        print("NOM  TELEPHONE  DURE MOYENNE D'APPEL")
+    print('%s:%s:%s' % (nom,tel,UserdureMoyenne))
 

@@ -27,19 +27,17 @@ for line in sys.stdin:
             tel = Longname[2]
             #print(name)
             #print(tel)
-            tab_Dure =userDuree(tel)
+            #tab_Dure =userDuree(tel)
             #taille du tableau
-            tailletableau = len(tab_Dure)
+            #tailletableau = len(tab_Dure)
             #key_For_reduce =["a","b","c"]
 
-            for indice in range (tailletableau):
+            #for indice in range (tailletableau):
                 #key_For_reduce=[name,tel,dure]
-                dure = int(tab_Dure[indice])
+                #dure = int(tab_Dure[indice])
                 #print(dure)
-                name= regex.sub('', name.lower())
-                print('%s:%s:%s:%s;%s' %(name,tel,dure,tailletableau, 1))
-
-
-                #print('%s;%s' % (name, 1))
+            name= regex.sub('', name.lower())
+            print('%s:%s;%s' %(name,tel, 1))
+            #print('%s;%s' % (name, 1))
                 #print(name)
 
