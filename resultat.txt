@@ -1,0 +1,6 @@
+Andrew has an average time of 43.27 with 1196 calls
+Liam has an average time of 45.65 with 2012 calls
+Luke has an average time of 44.52 with 1153 calls
+Michael has an average time of 44.75 with 1459 calls
+Natalie has an average time of 44.08 with 460 calls
+William has an average time of 45.39 with 823 calls
