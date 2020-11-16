@@ -5,13 +5,13 @@ we have 02 mainly files users.txt and calls.txt.
 The purpose is to return the average call duration for each user living in Paris.
 The schematics of the two attached files are:
 
-users(nom, prenom, tel, dept, ville)
+```users(nom, prenom, tel, dept, ville)
 calls(de, vers, durée)
 
 SELECT name, avg(duration)
 FROM calls C, users U
 WHERE C.de= U.tel AND city='Paris'.
-GROUP BY name);
+GROUP BY name);```
 
 ## Installation
 
@@ -38,7 +38,7 @@ Michael has an average time of 44.75 with 1459 calls
 Natalie has an average time of 44.08 with 460 calls
 William has an average time of 45.39 with 823 calls
 
-``
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
