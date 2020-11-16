@@ -25,9 +25,7 @@ git clone https://github.com/assabur/MapReduceProject.git
 Make sure mapper.py combine.py reducer.py have the right to execute
 if not the case open a terminal and type
 ```python
-Make chmod +x mapper.py combine.py reducer.py```
-
-```python
+Make chmod +x mapper.py combine.py reducer.py
 cat users.txt calls.txt |./mapper.py|./combine.py |./reducer.py > resultat.txt
 ```
 
