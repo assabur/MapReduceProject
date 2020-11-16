@@ -1,6 +1,17 @@
 # Description
 
-MapReduceProject is a Python project understand a map reduce concept.
+MapReduceProject is a Python project to understand well a map reduce concept.
+we have 02 mainly files users.txt and calls.txt.
+The purpose is to return the average call duration for each user living in Paris.
+The schematics of the two attached files are:
+
+users(nom, prenom, tel, dept, ville)
+calls(de, vers, durée)
+
+SELECT name, avg(duration)
+FROM calls C, users U
+WHERE C.de= U.tel AND city='Paris'.
+GROUP BY name);
 
 ## Installation
 
