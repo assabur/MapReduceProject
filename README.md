@@ -5,14 +5,15 @@ we have 02 mainly files users.txt and calls.txt.
 The purpose is to return the average call duration for each user living in Paris.
 The schematics of the two attached files are:
 
-```
+```python
 users(nom, prenom, tel, dept, ville)
 calls(de, vers, durée)
 
 SELECT name, avg(duration)
 FROM calls C, users U
 WHERE C.de= U.tel AND city='Paris'.
-GROUP BY name);```
+GROUP BY name);
+```
 
 ## Installation
 
@@ -20,7 +21,6 @@ Use git to clone project.
 ```bash
 git clone https://github.com/assabur/MapReduceProject.git
 ```
-
 ## Usage
 Make sure mapper.py combine.py reducer.py have the right to execute
 if not the case open a terminal and type
