@@ -5,7 +5,8 @@ we have 02 mainly files users.txt and calls.txt.
 The purpose is to return the average call duration for each user living in Paris.
 The schematics of the two attached files are:
 
-```users(nom, prenom, tel, dept, ville)
+```
+users(nom, prenom, tel, dept, ville)
 calls(de, vers, durée)
 
 SELECT name, avg(duration)
@@ -23,14 +24,15 @@ git clone https://github.com/assabur/MapReduceProject.git
 ## Usage
 Make sure mapper.py combine.py reducer.py have the right to execute
 if not the case open a terminal and type
-```Make chmod +x mapper.py combine.py reducer.py```
+```python
+Make chmod +x mapper.py combine.py reducer.py```
 
 ```python
 cat users.txt calls.txt |./mapper.py|./combine.py |./reducer.py > resultat.txt
 ```
 
 ## Output
-```
+```python
 Andrew has an average time of 43.27 with 1196 calls
 Liam has an average time of 45.65 with 2012 calls
 Luke has an average time of 44.52 with 1153 calls
