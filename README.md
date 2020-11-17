@@ -14,7 +14,7 @@ FROM calls C, users U
 WHERE C.de= U.tel AND city='Paris'.
 GROUP BY name);
 ```
-### Demarches
+# Demarche
 ```
 In the Mapper.py file we filter the received data so that we get the names of the people living in Paris, their
 phone number and the duration of the call.this information is then transmitted to the combine.py file.
@@ -22,8 +22,8 @@ phone number and the duration of the call.this information is then transmitted t
 In the Combine.py file we get in two dictionaries the list of the users living in Paris and their phone numbers and in
 the other one the list of the calls made and their call duration. A third dictionary which will contain a phone number
 associated with a table containing all the call durations.
-Then we can easily calculate the total sum of the call durations made by a user living in Paris.This information is transmitted
-to the Reducer.py file.
+Then we can easily calculate the total sum of the call durations made by a user living in Paris.This information 
+is transmitted to the Reducer.py file.
 
 To finish in the Reducer.py file, you will have to average the durations per user and to display it.
 ```
